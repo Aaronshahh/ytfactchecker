@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Fact Checker",
+  "version": "1.0",
+  "description": "Fact-check YouTube video transcripts in real time using Hugging Face AI.",
+  "permissions": [
+    "scripting",
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://api-inference.huggingface.co/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/watch*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+} 
