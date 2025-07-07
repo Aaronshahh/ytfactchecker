@@ -220,3 +220,13 @@
 .transcript-line.active-line.loading {
   border-left-color: #2196f3 !important;
 } 
+
+.confident { background: #e6f9e6 !important; border-left: 4px solid #4caf50 !important; }
+.fair { background: #fff7e6 !important; border-left: 4px solid #ff9800 !important; }
+.doubtful { background: #ffe6e6 !important; border-left: 4px solid #f44336 !important; }
+.selected-line { box-shadow: 0 0 0 2px #2196f3 !important; z-index: 1; position: relative; }
+
+/* Ensure .selected-line does not override the background from verdict classes */
+.transcript-line.selected-line.confident { background: #e6f9e6 !important; }
+.transcript-line.selected-line.fair { background: #fff7e6 !important; }
+.transcript-line.selected-line.doubtful { background: #ffe6e6 !important; } 
