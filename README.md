@@ -1,5 +1,5 @@
 # ytfactchecker
-Browser extension uses BART Hugging face model to fact check youtube video transcripts on US politics, news and medicine.
+Browser extension uses BART-based NLI Hugging Face model to fact check youtube video transcripts on US politics, news and medicine.
 Workflow:
 1. scrapes site for youtube transcript
 2. determines whether the claim is fact based, a question, an opinion, etc.
